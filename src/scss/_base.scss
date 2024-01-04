@@ -1,0 +1,79 @@
+html {
+  /* 10px / 16(по умолчанию) = 0.625 -> 62.5% */
+  font-size: 62.5%;
+}
+
+body {
+  @include text;
+
+  position: relative;
+  overflow-x: hidden;
+  color: var(--black);
+  background: var(--white);
+
+  &::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: var(--card-border);
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    height: 3rem; 
+    background-color: var(--blue);
+    border-radius: 0.3rem;
+    outline: 0.2rem solid var(--blue);
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+
+.container {
+  position: relative;
+  width: 144rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section-empty {
+  margin-top: 14rem;
+}
+
+span {
+  display: inline;
+}
+
+a {
+  color: var(--black);
+}
+
+sup {
+  font-size: 1.2rem;
+}
+
+.link {
+  font-family: 'Gilroy-500', sans-serif;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.text-small {
+  @include text-small;
+}
+
+.text-bold {
+  @include text-bold;
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+// используется в .section-advantages__list
+.section-spacing {
+  padding: 3rem 2rem !important;
+}

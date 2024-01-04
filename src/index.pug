@@ -1,0 +1,131 @@
+extends pug/base.pug
+
+append content
+  include pug/includes/header.pug
+
+  main.main(id="main")
+    section.section-hero
+      .container
+        .section-hero__inner
+          .section-hero__block
+            h1.section-hero__title Интернет-магазин пиломатериалов
+            p.section-hero__subtitle С оперативной доставкой по Москве и Московской области
+            button.section-hero__btn.btn.btn-primary.btn-lg Перейти в каталог
+          .section-hero__block
+            .section-hero__block-image
+              img.section-hero__img(src="images/main/main_hero.png" alt="")
+              .section-hero__block-item
+                p.section-hero__block-item-text Пиломатериалы от производителя
+                .section-hero__block-item-round
+              .section-hero__block-item
+                p.section-hero__block-item-text Древесина разной сортности и качества
+                .section-hero__block-item-round
+              .section-hero__block-item
+                p.section-hero__block-item-text Широкая линейка продукции
+                .section-hero__block-item-round
+
+    section.section
+      .container
+        .section__inner
+          .section-header
+            .section-header__block
+              h2.section-header__title Каталог продукции
+              p.section-header__subtitle Представлен качественными пиломатериалами для различных нужд строительства
+            .section-header__btn.btn Перейти в каталог
+
+          .section-content__cards
+            a.card(href="#")
+              .card-content
+                .card-content__title Доска
+                .card-content__text от 13 500 ₽
+              img.card-content__img(src="images/catalog/1.jpg" alt="")
+            a.card(href="#")
+              .card-content
+                .card-content__title Брус
+                .card-content__text от 18 500 ₽
+              img.card-content__img(src="images/catalog/2.jpg" alt="")
+            a.card(href="#")
+              .card-content
+                .card-content__title Брусок
+                .card-content__text от 75 ₽
+              img.card-content__img(src="images/catalog/3.jpg" alt="")
+            a.card(href="#")
+              .card-content
+                .card-content__title Блокхаус
+                .card-content__text от 700 ₽
+              img.card-content__img(src="images/catalog/4.jpg" alt="")
+
+            a.card(href="#")
+              .card-content
+                .card-content__title Вагонка
+                .card-content__text от 450 ₽
+              img.card-content__img(src="images/catalog/5.jpg" alt="")
+            a.card(href="#")
+              .card-content
+                .card-content__title Имитация бруса
+                .card-content__text от 550 ₽
+              img.card-content__img(src="images/catalog/6.jpg" alt="")
+            a.card(href="#")
+              .card-content
+                .card-content__title Половая доска
+                .card-content__text от 700 ₽
+              img.card-content__img(src="images/catalog/7.jpg" alt="")
+            a.card(href="#")
+              .card-content
+                .card-content__title Клееный пиломатериал
+                .card-content__text от 55000 ₽
+              img.card-content__img(src="images/catalog/8.jpg" alt="")
+
+            a.card(href="#")
+              .card-content
+                .card-content__title Фанера
+                .card-content__text от 500 ₽
+              img.card-content__img(src="images/catalog/9.jpg" alt="")
+            a.card(href="#")
+              .card-content
+                .card-content__title Погонаж
+                .card-content__text от 8 ₽
+              img.card-content__img(src="images/catalog/10.jpg" alt="")
+            a.card(href="#")
+              .card-content
+                .card-content__title Лиственница
+                .card-content__text от 680 ₽
+              img.card-content__img(src="images/catalog/11.jpg" alt="")
+            a.card(href="#")
+              .card-content
+                .card-content__title Стройматериалы
+                .card-content__text от 60 ₽
+              img.card-content__img(src="images/catalog/12.jpg" alt="")
+
+    section.section-hero
+      .container
+        .section-hero__inner
+          .section-hero__block
+            p.section-hero__block-subtitle GrandLesMarket
+            h2.section-hero__block-title магазин пиломатериалов
+            p.section-hero__block-text.
+              Мы стремимся обеспечивать потребности самых разных заказчиков в качественной древесине
+              для разных нужд строительства. Мы постоянно расширяем линейку пиломатериалов для продажи,
+              в нашем каталоге представлены изделия с разными характеристиками и уровня качества,
+              чтобы удовлетворить любые запросы. Ведь древесина может быть очень разной и использоваться
+              по-разному.
+
+    section.section
+      .container
+        .section__inner
+          .section-header
+            .section-header__block
+              h2.section-header__title Популярные товары
+              p.section-header__subtitle Выбирайте пиломатериалы, которые пользуются наибольшим спросом у наших клиентов
+            .section-header__btn.btn Перейти в каталог
+
+          .section-content__cards.popular-slider
+            .horizontal-card
+              .horizontal-card__picture
+                img.horizontal-card__img(src="images/main/popular_1.png" alt="")
+              .horizontal-card__content
+                .horizontal-card__content-hits
+                  .hit Акция
+                  .hit -30%
+
+  include pug/includes/footer.pug
